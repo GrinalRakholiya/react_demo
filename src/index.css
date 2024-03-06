@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+.form {
+background-color: rgb(197, 241, 246);
+width: 600px;
+text-align: center;
+justify-content: center;
+margin-left: 36%;
+align-items: center;
+align-content: center;
+
+}
