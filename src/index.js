@@ -14,6 +14,13 @@ import InputBox from './InputBox';
 import Hide from './HideShowElement';
 import Form from './Form';
 import Statement from './ControlStatement';
+import FunctionAsPara from './FunctionAsPara';
+import CompoDidMount from './CompoDidMount';
+import CompoDidUpdate from './ComponentDidUpdate';
+import ShouldCompoUpdate from './ShouldCompoUpdate';
+import Hooks from './Hooks';
+import UseEffect from './UseEffect';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,6 +39,12 @@ root.render(
     <Hide/>
     <Form/>
     <Statement/>
+    <FunctionAsPara/>
+    <CompoDidMount/>
+    <CompoDidUpdate/>
+    <ShouldCompoUpdate/>
+    <Hooks/>
+    <UseEffect/>
   </React.StrictMode>
 );
 
