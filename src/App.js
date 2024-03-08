@@ -1,11 +1,6 @@
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <h1>React Page</h1>
-    </div>
-  );
+function App(){
+  return(<>
+  <h1>React App</h1>
+  </>)
 }
-
 export default App;
