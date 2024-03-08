@@ -6,11 +6,11 @@ class ComponentDidUpdate extends Component {
         this.state = {
             count: 0
         };
-    }   
+    }
     componentDidUpdate(prevProps, prevState) {
         console.warn(prevState.count, this.state.count)
-        if (this.state.count<10){
-            this.setState({count:this.state.count+1})
+        if (this.state.count < 10) {
+            this.setState({ count: this.state.count + 1 })
         }
     }
 
@@ -18,7 +18,7 @@ class ComponentDidUpdate extends Component {
         return (
             <div>
                 <p>Count: {this.state.count}</p>
-                <button onClick={() => this.setState({ count:1 })}>Increment Count</button>
+                <button onClick={() => this.setState({ count: 1 })}>Increment Count</button>
             </div>
         );
     }

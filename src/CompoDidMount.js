@@ -14,9 +14,9 @@ class CompoDidMount extends Component {
         return (
             <>
                 <h1>ComponentDidMount Life Cycle Method {this.state.name}</h1>
-                <button onClick={() => { this.setState({name:"Greenal"})}}>Update Name</button >
+                <button onClick={() => { this.setState({ name: "Greenal" }) }}>Update Name</button >
             </>
-            )
+        )
     }
 }
 export default CompoDidMount
