@@ -1,13 +1,14 @@
 import { useState } from "react";
-function UseState(){
-    const[data,setData]=useState(0)
-    function UpdateData(){
-        setData(data+1)
+
+function UseState() {
+    const [data, setData] = useState(0)
+    function UpdateData() {
+        setData(data + 1)
     }
-    return(
+    return (
         <>
-        <h1>{data}</h1>
-        <button onClick={UpdateData}>Update Data</button>
+            <h1>Data: {data}</h1>
+            <button onClick={UpdateData}>Update Data</button>
         </>
     )
 }
