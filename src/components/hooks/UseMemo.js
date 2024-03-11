@@ -2,12 +2,12 @@ import React, { useState, useMemo } from 'react';
 
 function UseMemo() {
     const [count, setCount] = useState(0);
-    const[item,setItem]=useState(10)
+    const [item, setItem] = useState(10)
 
     const multiCount = useMemo(() => {
         console.warn("multiCount called")
         return count * 5;
-    }, [count]); 
+    }, [count]);
 
     return (
         <>
@@ -17,7 +17,6 @@ function UseMemo() {
             <h2>{multiCount}</h2>
             <button onClick={() => setCount(count + 1)}>Increment Count</button>
             <button onClick={() => setItem(item + 1)}>Increment Item</button>
-
         </>
     );
 }
