@@ -3,29 +3,38 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
-import Class from './Class';
-import Users, { User } from './Users';
-import WithoutJSX from './WithoutJSX';
-import Event from './Event';
-import UseState from './UseStates';
-import StateClass from './StateClass';
-import Props from './PropsFunction';
-import Prop from './PropsClass';
-import InputBox from './InputBox';
-import Hide from './HideShowElement';
-import Form from './Form';
-import Statement from './ControlStatement';
-import FunctionAsPara from './FunctionAsPara';
-import CompoDidMount from './CompoDidMount';
-import CompoDidUpdate from './ComponentDidUpdate';
-import ShouldCompoUpdate from './ShouldCompoUpdate';
-import Hooks from './Hooks';
-import UseEffect from './UseEffect';
-import DiffStyles from './withStyles';
-import Array from './Array';
-import NestedList from './NestedList';
-import PureComp from './PureCompo';
-import UseMemo from './UseMemo';
+import Class from './components/Class';
+import Users, { User } from './components/Users';
+import WithoutJSX from './components/WithoutJSX';
+import Event from './components/Event';
+import UseState from './components/hooks/UseStates';
+import StateClass from './components/StateClass';
+import Props from './components/PropsFunction';
+import Prop from './components/PropsClass';
+import InputBox from './components/InputBox';
+import Hide from './components/HideShowElement';
+import Form from './components/Form';
+import Statement from './components/ControlStatement';
+import FunctionAsPara from './components/FunctionAsPara';
+import CompoDidMount from './components/lifecycleMethods/CompoDidMount';
+import CompoDidUpdate from './components/lifecycleMethods/ComponentDidUpdate';
+import ShouldCompoUpdate from './components/lifecycleMethods/ShouldCompoUpdate';
+import Hooks from './components/hooks/Hooks';
+import UseEffect from './components/hooks/UseEffect';
+import DiffStyles from './components/styleTypes/withStyles';
+import Array from './components/Array';
+import NestedList from './components/arrayHandling/NestedList';
+import PureComp from './components/PureCompo';
+import UseMemo from './components/hooks/UseMemo';
+import Ref from './components/Ref';
+import UseRef from './components/hooks/useRef';
+import ForwardRef from './components/hooks/ForwardRef';
+import ControlledCompo from './components/component/ControlledCompo';
+import UncontrolledCompo from './components/component/UncontrolledCompo';
+import HighOrderCompo from './components/HOC';
+import Routing from './components/router/reactRouter';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -50,11 +59,20 @@ root.render(
     <ShouldCompoUpdate />
     <Hooks />
     <UseEffect />
-    <DiffStyles/>
-    <Array/>
-    <NestedList/>
-    <PureComp/>
-    <UseMemo/>
+    <DiffStyles />
+    <Array />
+    <NestedList />
+    <PureComp />
+    <UseMemo />
+    <Ref />
+    <UseRef />
+    <ForwardRef />
+    <ControlledCompo />
+    <UncontrolledCompo />
+    <HighOrderCompo />
+    <Router>
+      <Routing />
+    </Router>
   </React.StrictMode>
 );
 
