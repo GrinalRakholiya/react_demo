@@ -8,6 +8,5 @@ function ControlledCompo() {
             <input type="text" value={val} onChange={e => setVal(e.target.value)} />
         </>
     )
-
 }
 export default ControlledCompo

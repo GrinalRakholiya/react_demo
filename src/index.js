@@ -34,7 +34,10 @@ import UncontrolledCompo from './components/component/UncontrolledCompo';
 import HighOrderCompo from './components/HOC';
 import Routing from './components/router/reactRouter';
 import { BrowserRouter as Router } from 'react-router-dom';
-
+import DynamicRouting from './components/router/dynamicRouting';
+import GetMethod from './components/APICall/getMethod';
+// import UseEffects from './components/hooks/useEffectComparison';
+import ReactMemo from './components/hooks/reactMemo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -73,6 +76,10 @@ root.render(
     <Router>
       <Routing />
     </Router>
+    <DynamicRouting />
+    <GetMethod/>
+    {/* <UseEffects/> */}
+    <ReactMemo/>
   </React.StrictMode>
 );
 
