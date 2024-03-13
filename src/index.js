@@ -35,9 +35,11 @@ import HighOrderCompo from './components/HOC';
 import Routing from './components/router/reactRouter';
 import { BrowserRouter as Router } from 'react-router-dom';
 import DynamicRouting from './components/router/dynamicRouting';
-import GetMethod from './components/APICall/getMethod';
-// import UseEffects from './components/hooks/useEffectComparison';
+import UseEffects from './components/hooks/useEffectComparison';
 import ReactMemo from './components/hooks/reactMemo';
+import GetMethod from './components/APICall/getMethod';
+import POSTMethod from './components/APICall/postMethod';
+import PreviousState from './components/hooks/previousState';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -77,9 +79,11 @@ root.render(
       <Routing />
     </Router>
     <DynamicRouting />
-    <GetMethod/>
-    {/* <UseEffects/> */}
-    <ReactMemo/>
+    <UseEffects />
+    <ReactMemo />
+    <GetMethod />
+    <POSTMethod />
+    <PreviousState />
   </React.StrictMode>
 );
 
