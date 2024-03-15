@@ -28,7 +28,7 @@ import PureComp from './components/PureCompo';
 import UseMemo from './components/hooks/UseMemo';
 import Ref from './components/Ref';
 import UseRef from './components/hooks/useRef';
-import ForwardRef from './components/hooks/ForwardRef';
+import ForwardRef from './components/hooks/forwardRef/ForwardRef';
 import ControlledCompo from './components/component/ControlledCompo';
 import UncontrolledCompo from './components/component/UncontrolledCompo';
 import HighOrderCompo from './components/HOC';
@@ -36,10 +36,13 @@ import Routing from './components/router/reactRouter';
 import { BrowserRouter as Router } from 'react-router-dom';
 import DynamicRouting from './components/router/dynamicRouting';
 import UseEffects from './components/hooks/useEffectComparison';
-import ReactMemo from './components/hooks/reactMemo';
+import ReactMemo from './components/hooks/reactMemo/reactMemo';
 import GetMethod from './components/APICall/getMethod';
 import POSTMethod from './components/APICall/postMethod';
 import PreviousState from './components/hooks/previousState';
+import PreviousProps from './components/hooks/previousProps/previousProps';
+import ContextAPI from './components/contextAPIWithHooks/contextAPI';
+import UseCallback from './components/hooks/useCallback/useCallback';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -83,7 +86,10 @@ root.render(
     <ReactMemo />
     <GetMethod />
     <POSTMethod />
-    <PreviousState />
+    <PreviousState /> 
+    <PreviousProps/>
+    <ContextAPI />
+    <UseCallback />
   </React.StrictMode>
 );
 
